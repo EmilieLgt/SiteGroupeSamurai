@@ -1,0 +1,67 @@
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+:root {
+    --backgroundColor: rgb(#1b1919);
+    /* (pour le fond)*/
+    --primaryColor: rgb(#f4e724);
+    /*(pour les textes principaux)*/
+    --secondaryColor: rgb(#e3e3e3);
+    /*(deuxieme couleur de texte)*/
+    --h1Color: (#f4e724);
+    /*(titre principal)*/
+    --h2Color: rgb(#f4e724);
+    /*(titres de section)*/
+    --h3Color: (#f4e724);
+  
+    --altPrimaryColor: rgb(38, 228, 238);
+    --altSecondaryColor: rgb(64, 239, 64);
+  
+    --altH1Color: rgb(128, 0, 128);
+    --altH2Color: rgb(64, 239, 64);
+  
+    /*AJOUTS*/
+    --primaryfont: "Montserrat", sans-serif;
+    --h2font: "Orbitron", sans-serif;
+  }
+  h3 {
+    text-align: center;
+    display: inline;
+    font-size: 1.5rem;
+    font-family: var(--h2font);
+    padding-left: 19vw;
+    color: var(--h2Color);
+    animation: pulsate 2.5s ease-in-out infinite alternate;
+  }
+  
+  h4 {
+    text-align: center;
+    display: inline;
+    font-size: 1rem;
+    font-family: var(--h2font);
+    color: var(--h2Color);
+  }
+  * {
+    overflow-x: hidden;
+    overflow-x: hidden;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  body {
+    background-color: var(--backgroundColor);
+    background-image: url('Images/SamuraiBackgroundHighRéso.jpg');
+    margin: 0;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  h2 {
+    display: inline;
+    margin-top: 1em;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    padding-left: 1.6em;
+    font-size: 2rem;
+    font-family: var(--h2font);
+    color: var(--h2Color);
+    animation: pulsate 2.5s ease-in-out infinite alternate;
+  }
