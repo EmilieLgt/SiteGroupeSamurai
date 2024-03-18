@@ -1,0 +1,74 @@
+
+   
+    .history {
+        height: 100%;
+        background-image: url("Images/Samurai1.png");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    /*Rajout d'une div pour contrôler la fenêtre incluant le texte*/
+    .history-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: auto;
+        width: auto;
+    }
+
+    .history p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15pt;
+        opacity: 2;
+        padding: 3em;
+    }
+
+
+@media screen and (max-width: 390px) {
+
+    
+
+    /* modification de la taille de la fenêtre b-g*/
+    .history {
+        width: 100%;
+        margin: 0;
+        height: 70vh;
+        background-image: url("Images/Samurai1.png");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    /*Ajout de la div texte pour paramètre et ajustement des valeurs*/
+    .history-text {
+       text-align:center;
+        padding: 0em 1em 0em 1em;
+        line-height: 1.5em;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        width: auto;
+    }
+
+    /*Taille de typo et marges modifiés*/
+    .history p {
+        height: auto;
+        margin: 0em 2em 0em 2em;
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+        font-size: 10pt;
+        opacity: 2;
+    }
+
+}
+

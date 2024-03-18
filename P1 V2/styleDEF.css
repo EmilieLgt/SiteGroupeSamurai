@@ -1,0 +1,591 @@
+:root {
+  --backgroundColor: rgb(#1b1919);
+  /* (pour le fond)*/
+  --primaryColor: white;
+  /*(pour les textes principaux)*/
+  --secondaryColor: rgb(0, 0, 0);
+  /*(deuxieme couleur de texte)*/
+  --h1Color: yellow;
+  /*(titre principal)*/
+  --h2Color: rgb(242, 255, 0);
+  /*(titres de section)*/
+  --h3Color: #d559e8;
+
+  --altPrimaryColor: rgb(38, 228, 238);
+  --altSecondaryColor: rgb(64, 239, 64);
+
+  --altH1Color: rgb(128, 0, 128);
+  --altH2Color: rgb(64, 239, 64);
+
+  /*AJOUTS*/
+  --primaryfont: "Montserrat", sans-serif;
+  --h2font: "Orbitron", sans-serif;
+}
+
+* {
+  overflow-x: hidden;
+  overflow-x: hidden;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: var(--backgroundColor);
+  background-image: url('Images/SamuraiBackgroundHighRéso.jpg');
+  margin: 0;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+h2 {
+  display: inline;
+  margin-top: 1em;
+  padding-bottom: 1em;
+  padding-top: 1em;
+  padding-left: 1.6em;
+  font-size: 2rem;
+  font-family: var(--h2font);
+  color: var(--h2Color);
+  animation: pulsate 2.5s ease-in-out infinite alternate;
+}
+@keyframes pulsate {
+  100% {
+    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff,
+      0 0 30px var(--h3Color), 0 0 40px var(--h3Color), 0 0 70px var(--h3Color),
+      0 0 80px var(--h3Color), 0 0 90px var(--h3Color);
+  }
+
+  0% {
+    text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 6px #fff,
+      0 0 10px var(--h3Color), 0 0 35px var(--h3Color), 0 0 45px var(--h3Color),
+      0 0 60px var(--h3Color), 0 0 70px var(--h3Color);
+  }
+}
+
+h3 {
+  text-align: center;
+  display: inline;
+  font-size: 1.5rem;
+  font-family: var(--h2font);
+  padding-left: 19vw;
+  color: var(--h2Color);
+  animation: pulsate 2.5s ease-in-out infinite alternate;
+}
+
+h4 {
+  text-align: center;
+  display: inline;
+  font-size: 1rem;
+  font-family: var(--h2font);
+  color: var(--h2Color);
+}
+
+/* Section clip du site  */
+
+#clipcards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-bottom: 90px;
+  padding-top: 7%;
+}
+
+#clip1,
+#clip2 {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  align-items: center;
+  min-height: 3em;
+  padding: 1em 1em;
+  margin: auto;
+  background-color: rgb(128, 0, 128, 0.5);
+  text-align: center;
+  border: 0.2rem solid #bc13fe;
+  border-radius: 2rem;
+}
+
+#clip2 {
+  margin-top: 4em;
+}
+
+#ClipVideo1,
+#ClipVideo2 {
+  background-color: rgb(128, 0, 128, 0.5);
+  text-align: center;
+  border: 0.2rem solid #ef012d;
+  border-radius: 2rem;
+  box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #ef012d,
+    0 0 0.8rem #ef012d, 0 0 2.8rem #ef012d, inset 0 0 1.3rem #ef012d;
+}
+
+#clipinfo {
+  display: flex;
+  align-items: center;
+  font-family: var(--primaryfont);
+  color: #fffb00;
+  padding-top: 0.5em;
+}
+
+.crew {
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+  margin-top: 105px;
+  padding-top: 5%;
+}
+
+#crewLeft {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-left: 5em;
+}
+
+#crewPhoto1 {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 25px;
+  margin-left: -14%;
+  margin-top: -74%;
+
+  background-color: rgb(128, 0, 128, 0.5);
+  text-align: center;
+  border: 0.2rem solid #bc13fe;
+  border-radius: 2rem;
+  box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #bc13fe,
+    0 0 0.8rem #bc13fe, 0 0 2.8rem #bc13fe, inset 0 0 1.3rem #bc13fe;
+}
+/*Carrousel MOBILE */
+@media screen and (max-width: 990px) {
+  .carouselAll {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+  }
+  .carouselAll::-webkit-scrollbar {
+    width: 0 !important;
+  }
+
+  .carouselList {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(7, 100%);
+    grid-template-rows: 1fr;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+    overflow: scroll;
+    scroll-snap-type: both mandatory;
+    scroll-padding: 1rem;
+  }
+
+  @keyframes pulsate {
+    100% {
+      /* Larger blur radius */
+      text-shadow: 0 0 4px #fcdcdc, 0 0 11px #fcdcdc, 0 0 19px #fcdcdc,
+        0 0 40px cyan, 0 0 80px cyan, 0 0 90px cyan, 0 0 100px cyan,
+        0 0 150px cyan;
+    }
+
+    0% {
+      /* Smaller blur radius */
+      text-shadow: 0 0 2px #fcdcdc, 0 0 4px #fcdcdc, 0 0 6px #fcdcdc,
+        0 0 10px cyan, 0 0 45px cyan, 0 0 55px cyan, 0 0 70px cyan,
+        0 0 80px cyan;
+    }
+  }
+  .active {
+    scroll-snap-type: unset;
+  }
+
+  .liCarousel {
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    scroll-snap-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    font-family: var(--h2font);
+  }
+
+  .imgCarousel {
+    color: white;
+    width: 250px;
+    box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #fe1313,
+      0 0 0.8rem #fe1313, 0 0 2.8rem #fe1313, inset 0 0 1.3rem #fe1313;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .carouselAll {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+  }
+
+  .carouselList {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(7, 40%);
+    grid-template-rows: 1fr;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+    overflow: scroll;
+    max-height: 50%;
+    scroll-snap-type: both mandatory;
+    scroll-padding: 1rem;
+  }
+
+  .active {
+    scroll-snap-type: unset;
+  }
+
+  .liCarousel {
+    scroll-snap-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 3px;
+    color: black;
+    gap: 2em;
+  }
+
+  .imgCarousel {
+    max-width: 60%;
+    max-height: 60%;
+
+    box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #fe1313,
+      0 0 0.8rem #fe1313, 0 0 2.8rem #fe1313, inset 0 0 1.3rem #fe1313;
+  }
+}
+
+.footer {
+  background: #131313;
+  padding: 30px 0px;
+  font-family: "Play", sans-serif;
+  text-align: center;
+}
+
+.footer .row {
+  width: 100%;
+  margin: 1% 0%;
+  padding: 0.6% 0%;
+  color: gray;
+  font-size: 0.8em;
+}
+
+.footer .row a {
+  text-decoration: none;
+  color: yellow;
+  transition: 0.5s;
+}
+
+.footer .row a:hover {
+  color: rgb(240, 0, 150);
+}
+
+.footer .row ul {
+  width: 100%;
+}
+
+.footer .row ul li {
+  display: inline-block;
+  margin: 0px 30px;
+}
+
+.footer .row a i {
+  font-size: 2em;
+  margin: 0% 1%;
+}
+
+/* Version Desktop du crew ci dessous */
+@media screen and (min-width: 990px) {
+.crew {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-top: 5%;
+}
+#crewPhoto1 {
+  margin-left: -5%;
+  margin-top: 0;
+}
+#overlayCrewLeft {
+  margin-left: 0;
+  padding: 2% 2%;
+}
+.crewLeftInfo {
+  margin-left: 6em;
+  justify-content: flex-start;
+  text-align: left;
+}
+#crewPhoto2 {
+  margin-top: 0;
+  margin-right: -5%;
+}
+#overlayCrewRight {
+  margin-right: 0;
+  padding: 2% 2%;
+}
+.crewRightInfo {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  text-align: right;
+  margin-right: 6em;
+}
+}
+
+/* Version Mobile du crew ci dessous */
+@media screen and (min-width: 390px) {
+.crew {
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+  margin-top: 105px;
+  padding-top: 5%;
+}
+#crewLeft {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-left: 5em;
+}
+#crewPhoto1 {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 25px;
+  margin-left: -14%;
+  margin-top: -74%;
+  background-color: rgb(128, 0, 128, 0.5);
+  text-align: center;
+  border: 0.2rem solid #BC13FE;
+  border-radius: 2rem;
+  box-shadow: 0 0 .2rem #fff,
+      0 0 .2rem #fff,
+      0 0 2rem #BC13FE,
+      0 0 0.8rem #BC13FE,
+      0 0 2.8rem #BC13FE,
+      inset 0 0 1.3rem #BC13FE;
+}
+h4 {
+  color: #FFFB00;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+#overlayCrewLeft {
+  padding: 2% 2%;
+  /* margin-left: 15%; */
+  margin-right: 10%;
+  margin-left: 0%;
+  padding-top: 15%;
+  /* background-color: #801468; */
+  font-family: var(--primaryfont);
+  /* border-radius: 25px; */
+  background-color: rgb(128, 0, 128, 0.5);
+  text-align: center;
+  border: 0.2rem solid #BC13FE;
+  border-radius: 2rem;
+}
+.crewLeftInfo {
+  display: flex;
+  color: white;
+  margin-right: 5%;
+  text-align: right;
+  justify-content: flex-end;
+}
+#crewPhoto2 {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  margin-right: -14%;
+  margin-top: -74%;
+  background-color: rgb(128, 0, 128, 0.5);
+  text-align: center;
+  border: 0.2rem solid #BC13FE;
+  border-radius: 2rem;
+  box-shadow: 0 0 .2rem #fff,
+      0 0 .2rem #fff,
+      0 0 2rem #BC13FE,
+      0 0 0.8rem #BC13FE,
+      0 0 2.8rem #BC13FE,
+      inset 0 0 1.3rem #BC13FE;
+}
+#crewRight {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  margin-right: 5em;
+}
+#overlayCrewRight {
+  padding: 2% 2%;
+  /* margin-right: 15%; */
+  padding-top: 15%;
+  margin-left: 10%;
+  margin-right: 0%;
+  /* background-color: #801468; */
+  font-family: var(--primaryfont);
+  /* border-radius: 25px; */
+  background-color: rgb(128, 0, 128, 0.5);
+  text-align: center;
+  border: 0.2rem solid #BC13FE;
+  border-radius: 2rem;
+}
+.crewRightInfo {
+  /* margin-right: 6em; */
+  display: flex;
+  color: white;
+  /* justify-content: flex-start; */
+  text-align: left;
+  margin-left: 5%;
+}
+}
+
+
+@media (max-width: 990px) {
+  .footer {
+    text-align: center;
+    padding: 5%;
+  }
+  .footer .row ul li {
+    display: block;
+    margin: 10px 0px;
+    text-align: center;
+  }
+  .footer .row a i {
+    margin: 0% 3%;
+  }
+}
+
+/* HISTOIRE DU GROUPE  */
+
+.history {
+  height: 100%;
+  background-image: url("Images/Samurai1.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*Rajout d'une div pour contrôler la fenêtre incluant le texte*/
+.history-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+  width: auto;
+}
+
+.history p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15pt;
+  opacity: 2;
+  padding: 1em 15em;
+  color: var(--altPrimaryColor);
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 390px) {
+  /* modification de la taille de la fenêtre b-g*/
+  .history {
+    width: 100%;
+    margin: 0;
+    height: 70vh;
+    background-image: url("Images/Samurai1.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /*Ajout de la div texte pour paramètre et ajustement des valeurs*/
+  .history-text {
+    text-align: center;
+    padding: 0em 1em 0em 1em;
+    line-height: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+  }
+
+  /*Taille de typo et marges modifiés*/
+  .history p {
+    height: auto;
+    margin: 0em 2em 0em 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10pt;
+    opacity: 2;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  header {
+    position: sticky;
+    height: 50vh;
+    background-color: var(--backgroundColor);
+
+  }
+
+  .imageTitre {
+    padding-top: 10vh;
+    width: 100%;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .mobile-menu.active {
+    display: none;
+  }
+  .mobile-menu li {
+    display: none;
+  }
+
+  .menu {
+    display: visible;
+  }
+
+  .menu a {
+    color: #f8f804;
+    text-decoration: none;
+    font-family: var(--h2font);
+    text-transform: uppercase;
+    font-size: 2em;
+  }
+
+  .listemenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+    padding: 1em;
+    background-color: var(--backgroundColor);
+  }
+
+  .menu {
+    position: sticky;
+    top: 0px;
+  }
+
+  .header-img {
+    display: none;
+  }
+}
