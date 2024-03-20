@@ -116,6 +116,7 @@
     display: flex;
     text-align: start;
     overflow: scroll;
+     overflow-x:hidden;
     width: max-content;
     height: 40em;
     width: 80%;
