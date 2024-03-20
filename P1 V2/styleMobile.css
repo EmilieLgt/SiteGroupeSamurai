@@ -503,7 +503,7 @@ footer { font-family: var(--h2font);
     margin-top: 15px;
 }
 .bar-footer {
-    width: 200px;
+    width: 100px;
     height: 3px;
     background-color: var(--secondaryColor) ;
     margin-top: 8px;
