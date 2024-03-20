@@ -410,7 +410,7 @@ section {
     }
 
 
-    /* CREW VERSION DESKTOP */
+    /* CREW VERSION DESKTOP ELIAS */
 
     .crew {
         display: flex;
@@ -422,11 +422,20 @@ section {
     }
 
     #crewPhoto1 {
+        position: absolute;
+        width: 150px;
+        height: 150px;
         overflow: auto;
         border-radius: 25px;
         margin-left: -5%;
         margin-top: 0;
-       
+          /* background-color: #801468; */
+    font-family: var(--primaryfont);
+    /* border-radius: 25px; */
+    background-color: var(--opacityColor);
+    text-align: center;
+    border: 0.2rem solid #f4e724;
+    border-radius: 2rem;
        
        
     }
@@ -434,15 +443,28 @@ section {
     #overlayCrewLeft {
         margin-left: 0;
         padding: 2% 2%;
+           /* background-color: #801468; */
+           font-family: var(--primaryfont);
+           /* border-radius: 25px; */
+           background-color: var(--opacityColor);
+           text-align: center;
+           border: 0.2rem solid #f4e724;
+           border-radius: 2rem;
     }
 
     #crewLeft {
         padding-top: 0%;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
     }
 
     #crewRight {
         padding-bottom: 5%;
         padding-top: 5%;
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
     }
 
     .crewLeftTitle {
@@ -459,18 +481,33 @@ section {
         margin-left: 6em;
         justify-content: flex-start;
         text-align: left;
+        color:var(--secondaryColor);
     }
 
     #crewPhoto2 {
+        position: absolute;
+        width: 150px;
+        height: 150px;
         overflow: auto;
         margin-top: 0;
         margin-right: -5%;
+        border-radius: 2rem;
+        color:var(--altPrimaryColor);
+        text-align: center;
+        border: 0.2rem solid #f4e724;
         border-radius: 2rem;
     }
 
     #overlayCrewRight {
         margin-right: 0;
         padding: 2% 2%;
+           /* background-color: #801468; */
+    font-family: var(--primaryfont);
+    /* border-radius: 25px; */
+    background-color: var(--opacityColor);
+    text-align: center;
+    border: 0.2rem solid #f4e724;
+    border-radius: 2rem;
     }
 
     .crewRightTitle {
@@ -489,6 +526,7 @@ section {
         justify-content: flex-start;
         text-align: right;
         margin-right: 6em;
+        color:var(--secondaryColor);
     }
 
     /* FOOTER VERSION DESKTOP */
