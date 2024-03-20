@@ -61,24 +61,30 @@
 /* barre recherche pays */
 
 .recherchePays {
+    color: #E3E3E3;
     display: flex;
     margin-top: 2em;
     margin-left: auto;
     margin-right: auto;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    gap: 0.5em;
     width: 80%;
     font-weight: bold;
-    padding-bottom: 1em;
+    padding-bottom: 1.5em;
     padding-top: 0.3em;
     border-radius: 1em 1em 0 0;
     font-family: var(--primaryfont);
     background-color: rgb(0, 0, 0, 0.8);
 }
 
-/*Tournée*/
+.zoneRecherche {
+    padding-left: 1em;
+    padding-right: 1em;
+    height: 2em;
+}
 
+/*Tournée*/
 .tableTournee::-webkit-scrollbar {
     width: 0 !important;
 }
@@ -88,25 +94,25 @@
     margin-top: 0;
     margin-bottom: 2em;
     display: flex;
-    overflow-x: hidden;
-    overflow-y: hidden;
     text-align: start;
     overflow: scroll;
     width: max-content;
-    overflow-x: hidden;
-    overflow-y: hidden;
     height: 35em;
     width: 80%;
-    border: 0.2rem solid #bc13fe;
+    border: 0.2rem solid #12C2D9;
     border-radius: 0 0 2em 2em;
     padding: 0.4em;
-    box-shadow: 0 0 0.1rem #fff, 0 0 0.1rem #fff, 0 0 0.1rem #bc13fe,
-        0 0 0.8rem #bc13fe, 0 0 2.8rem #bc13fe, inset 0 0 1.3rem #bc13fe;
+    box-shadow: 0 0 0.1rem #fff, 0 0 0.1rem #fff, 0 0 0.1rem #12C2D9,
+        0 0 0.8rem #12C2D9, 0 0 2.8rem #12C2D9, inset 0 0 1.3rem #12C2D9;
 }
 
-
+.headtabletournee {
+    visibility: hidden;
+    width: 1px
+}
 
 td {
+    color: #E3E3E3;
     text-align: center;
     font-family: var(--primaryfont);
     border-bottom: yellow;
@@ -117,7 +123,6 @@ td {
     border-collapse: collapse;
     background-color: rgb(0, 0, 0, 0.8);
 }
-
 
 tr {
     display: flex;
@@ -137,17 +142,17 @@ tbody {
     width: 100%;
 }
 
-
 .datesTournee {
     font-weight: bold;
     border-top: dotted;
-    border-color: var(--h2Color);
     padding-top: 1em;
 }
 
 .lieuxTournee {
     font-style: italic;
     font-size: 0.8em;
+    padding-bottom: 1em;
+    padding-right: 0px;
 }
 
 th {
@@ -163,30 +168,27 @@ th {
 
 /*Jeu concours*/
 .jeuConcours {
-    background-color: rgb(128, 0, 128, 0.5);
+    background-color: #131313, 0.8;
     font-family: var(--primaryfont);
     width: 80%;
     margin: auto;
     margin-top: 2em;
     margin-bottom: 0;
-
     text-align: center;
     color: var(--primaryColor);
-    border: 0.2rem solid #bc13fe;
-    border-radius: 1em 1em 0 0;
+    border: 0.2rem solid #F8F804;
+    border-radius: 1em;
     padding: 0.4em;
-    box-shadow: 0 0 0.1rem #fff, 0 0 0.1rem #fff, 0 0 0.1rem #bc13fe,
-        0 0 0.8rem #bc13fe, 0 0 2.8rem #bc13fe, inset 0 0 1.3rem #bc13fe;
 }
 
 .textjeuConcours {
-    color: white;
+    color: #E3E3E3;
     font-size: 1.1em;
     padding: 1em;
 }
 
 .consignesConcours {
-    color: white;
+    color: #E3E3E3;
     font-size: 0.9em;
     padding: 1em;
 }
@@ -197,7 +199,7 @@ form {
     width: 85%;
     margin: auto;
     text-align: center;
-    color: var(--primaryColor);
+    color: #E3E3E3;
     border-radius: 0 0 1em 1em;
     padding-top: 1em;
 }
@@ -235,16 +237,24 @@ select {
 }
 
 .boutondenvoi:hover {
-    background-color: #32fce4;
+    background-color: #32FCE4;
 }
 
 .boutondenvoi:active {
-    background-color: #0effdf;
+    background-color: #0EFFDF;
     transform: translateY(4px);
 }
 
+.labels {
+    display: none
+}
 
-
+.caseformulaire {
+    padding: 1.3em;
+    width: 50%;
+    background-color: #E3E3E3;
+    border: solid 0.2em #F8F804;
+}
 
 
 /* CLIP VERSION MOBILE*/
@@ -757,119 +767,6 @@ select {
 }
 
 
-/* CREW VERSION MOBILE */
-
-.crew {
-    display: flex;
-    flex-direction: column;
-    gap: 120px;
-    margin-top: 105px;
-    padding-top: 5%;
-}
-
-#crewLeft {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    margin-left: 5em;
-}
-
-#crewPhoto1 {
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    border-radius: 25px;
-    margin-left: -14%;
-    margin-top: -74%;
-    background-color: rgb(128, 0, 128, 0.5);
-    text-align: center;
-    border: 0.2rem solid #BC13FE;
-    border-radius: 2rem;
-    box-shadow: 0 0 .2rem #fff,
-        0 0 .2rem #fff,
-        0 0 2rem #BC13FE,
-        0 0 0.8rem #BC13FE,
-        0 0 2.8rem #BC13FE,
-        inset 0 0 1.3rem #BC13FE;
-}
-
-h4 {
-    color: #FFFB00;
-    padding-top: 5%;
-    padding-bottom: 5%;
-}
-
-#overlayCrewLeft {
-    padding: 2% 2%;
-    /* margin-left: 15%; */
-    margin-right: 10%;
-    margin-left: 0%;
-    padding-top: 15%;
-    /* background-color: #801468; */
-    font-family: var(--primaryfont);
-    /* border-radius: 25px; */
-    background-color: rgb(128, 0, 128, 0.5);
-    text-align: center;
-    border: 0.2rem solid #BC13FE;
-    border-radius: 2rem;
-}
-
-.crewLeftInfo {
-    display: flex;
-    color: white;
-    margin-right: 5%;
-    text-align: right;
-    justify-content: flex-end;
-}
-
-#crewPhoto2 {
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    margin-right: -14%;
-    margin-top: -74%;
-    background-color: rgb(128, 0, 128, 0.5);
-    text-align: center;
-    border: 0.2rem solid #BC13FE;
-    border-radius: 2rem;
-    box-shadow: 0 0 .2rem #fff,
-        0 0 .2rem #fff,
-        0 0 2rem #BC13FE,
-        0 0 0.8rem #BC13FE,
-        0 0 2.8rem #BC13FE,
-        inset 0 0 1.3rem #BC13FE;
-}
-
-#crewRight {
-    display: flex;
-    align-items: center;
-    flex-direction: row-reverse;
-    margin-right: 5em;
-}
-
-#overlayCrewRight {
-    padding: 2% 2%;
-    /* margin-right: 15%; */
-    padding-top: 15%;
-    margin-left: 10%;
-    margin-right: 0%;
-    /* background-color: #801468; */
-    font-family: var(--primaryfont);
-    /* border-radius: 25px; */
-    background-color: rgb(128, 0, 128, 0.5);
-    text-align: center;
-    border: 0.2rem solid #BC13FE;
-    border-radius: 2rem;
-}
-
-.crewRightInfo {
-    /* margin-right: 6em; */
-    display: flex;
-    color: white;
-    /* justify-content: flex-start; */
-    text-align: left;
-    margin-left: 5%;
-}
 
 /* FOOTER VERSION MOBILE */
 
@@ -887,3 +784,24 @@ h4 {
 .footer .row a i {
     margin: 0% 3%;
 }
+
+/* BOUTTON POUR REMONTER HAUT DE PAGE  */
+#toTop {
+    display:none;
+    position: fixed;
+    bottom: 2em;
+    right: 1em;
+    z-index: 90;
+    border: none;
+    outline: none;
+    background-color: rgb(0, 0, 0, 0.5);
+    color: white;
+    cursor: pointer;
+    padding: 2em;
+    border-radius: 10px;
+    font-size: 6pt;
+    opacity: 0.5;
+  }
+  #toTop:hover {
+    background-color: rgb(13, 13, 13);
+  }

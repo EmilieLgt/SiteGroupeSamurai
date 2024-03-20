@@ -162,3 +162,23 @@ const compare = function(ids, asc){
       });
     });
 });
+
+let mybutton = document.getElementById("toTop");
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+function topFunction() {
+  document.documentElement.scrollTop = 0;
+}
+
+
+
+
+
+
+

@@ -1,16 +1,16 @@
 a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
 :root {
-    --backgroundColor: rgb(#1b1919);
+    --backgroundColor: #1b1919;
     /* (pour le fond)*/
-    --primaryColor: rgb(#f4e724);
+    --primaryColor: #f4e724;
     /*(pour les textes principaux)*/
-    --secondaryColor: rgb(#e3e3e3);
+    --secondaryColor: #e3e3e3;
     /*(deuxieme couleur de texte)*/
-    --h1Color: (#f4e724);
+    --h1Color: #f4e724;
     /*(titre principal)*/
-    --h2Color: rgb(#f4e724);
+    --h2Color: #f4e724;
     /*(titres de section)*/
-    --h3Color: (#f4e724);
+    --h3Color: #f4e724;
   
     --altPrimaryColor: rgb(38, 228, 238);
     --altSecondaryColor: rgb(64, 239, 64);
@@ -64,4 +64,4 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
     font-family: var(--h2font);
     color: var(--h2Color);
     animation: pulsate 2.5s ease-in-out infinite alternate;
-  }
+  } 
