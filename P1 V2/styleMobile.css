@@ -1,10 +1,12 @@
-@media screen and (max-width:990px) { 
+i@media screen and (max-width:990px) { 
 
       * {
         overflow: initial;
         overflow-x: initial;
     }
-    
+
+     section {padding-top: 2rem;}
+     
 /* HEADER DU SITE EN MOBILE*/
 
 .imageTitre {
@@ -392,7 +394,7 @@ select {margin-top : 1em;}
     border-radius: 25px;
     margin-left: -19%;
     margin-top: -66%;
-
+     overflow:scroll;
     text-align: center;
     border: 0.2rem solid #f4e724;
 }
@@ -435,6 +437,7 @@ select {margin-top : 1em;}
     position: absolute;
     width: 150px;
     height: 150px;
+     overflow:scroll;
     margin-right: -19%;
     margin-top: -66%;
     color:var(--altPrimaryColor);
