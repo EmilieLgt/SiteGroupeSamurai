@@ -1,5 +1,10 @@
 @media screen and (max-width:990px) { 
 
+      * {
+        overflow: initial;
+        overflow-x: initial;
+    }
+    
 /* HEADER DU SITE EN MOBILE*/
 
 .imageTitre {
@@ -155,7 +160,8 @@ tbody {
 
 .datesTournee {
     font-weight: bold;
-    border-top: dotted;
+    border-top: solid;
+    border-color: #53534f;
     padding-top: 1em;
 }
 
