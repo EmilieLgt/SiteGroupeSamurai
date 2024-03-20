@@ -163,6 +163,25 @@ const compare = function(ids, asc){
     });
 });
 
+
+/* affichage du prénom pour le formulaire */
+let form = document.querySelector(".formulaireJeu");
+let prenomInput = document.getElementById("prenom");
+let messageConfirmation = document.querySelector(".confirmationParticipation");
+let imageConfirmation = document.createElement("img")
+imageConfirmation.src="https://media2.giphy.com/media/9DvBKzl2OSERMcBs6G/giphy.gif"
+imageConfirmation.style.padding="1em";
+let blocImage = document.querySelector(".blocImageConfirmation");
+
+form.addEventListener("submit", function (event) {
+    event.preventDefault();
+    let prenomUser = prenomInput.value;
+    messageConfirmation.innerText = `Merci ${prenomUser}, votre participation au tirage au sort est bien enregistrée ! `
+    blocImage.appendChild(imageConfirmation)
+
+})
+
+
 let mybutton = document.getElementById("toTop");
 window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
