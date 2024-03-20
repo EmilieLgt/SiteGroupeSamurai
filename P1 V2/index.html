@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -63,40 +65,35 @@
                         <li class="liCarousel">
                             <img class="imgCarousel"
                                 src="https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/8b/17/28/8b17288b-54d8-6485-1767-2c45ba9aca52/0000481645219.jpg/1200x1200bb.jpg">
-                            <p>Chippin' in - 2077</p>
+                            <p>Chippin' in - 2012</p>
                         </li>
                         <li class="liCarousel">
                             <img class="imgCarousel"
                                 src="https://i1.sndcdn.com/artworks-uIzfoKuTQ0HYCJNq-pxCLFw-t500x500.jpg">
-                            <p>A Like Supreme - 2075</p>
+                            <p>A Like Supreme - 2010</p>
                         </li>
                         <li class="liCarousel">
                             <img class="imgCarousel"
                                 src="https://i.scdn.co/image/ab67616d0000b27328973e4f8f72ac6a33de98a8">
-                            <p>Never Fade Away - 2074</p>
+                            <p>Never Fade Away - 2009</p>
                         </li>
                         <li class="liCarousel">
                             <img class="imgCarousel"
                                 src="https://i1.sndcdn.com/artworks-FnrXph37y7tcjBcl-Q8xr8w-t500x500.jpg">
-                            <p>Black Dog - 2071</p>
+                            <p>Black Dog - 2007</p>
                         </li>
                         <li class="liCarousel">
                             <img class="imgCarousel"
                                 src="https://i.discogs.com/DjBgwrshbydoHnBVfToHdOnycC8pmNBCem75xnofPCo/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyNTE3/OTk5LTE2NDczNDY4/NzItOTU4MS5qcGVn.jpeg">
-                            <p>Archangel - 2069</p>
+                            <p>Archangel - 2004</p>
                         </li>
                         <li class="liCarousel">
 
                             <img class="imgCarousel"
-                                src="https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/8b/17/28/8b17288b-54d8-6485-1767-2c45ba9aca52/0000481645219.jpg/1200x1200bb.jpg">
-                            <p>Album placeholder Lorem - 20XX </p>
+                                src="Images/ballad.jpeg">
+                            <p>The Ballad Of Buck Ravers - 2003 </p>
                         </li>
-                        <li class="liCarousel">
-
-                            <img class="imgCarousel"
-                                src="https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/8b/17/28/8b17288b-54d8-6485-1767-2c45ba9aca52/0000481645219.jpg/1200x1200bb.jpg">
-                            <p>Album placeholder Lorem - 2003</p>
-                        </li>
+                        
                     </ul>
 
                 </div>
@@ -104,7 +101,7 @@
             </div>
         </section>
         <section> <button onclick="topFunction()" id="toTop" title="Go to top">↑</button>
-    </section>
+        </section>
 
         <section class="sectionTourne">
             <h2 class="titleTournee">TOURNEE</h2>
@@ -1703,9 +1700,10 @@
 
 
 
-            <h3 class="titreJeu">JEU CONCOURS</h3>
 
             <div class="jeuConcours">
+                <h3 class="titreJeu">JEU CONCOURS</h3>
+
                 <p class="textjeuConcours">Vous souhaitez <strong>rencontrer le groupe</strong> et <strong>gagner 2
                         places
                     </strong> pour la tournée de Samouraï ? Participez au tirage au sort !
@@ -1713,89 +1711,93 @@
                     <strong>adresse
                         mail</strong> ainsi que la
                     ville dans laquelle vous souhaiteriez gagner
-                    vos places !</div>
+                    vos places !
+                </div>
+
+                <form action="" , method="get" class="formulaireJeu">
+                    <div class="entreesForm">
+                        <label class="labels" for="prenom">Prénom :</label>
+                        <input class="caseformulaire" type="text" name="prenom" id="prenom" placeholder="Prénom"
+                            required>
+                    </div>
+                    <div class="entreesForm">
+                        <label class="labels" for="nom">Nom :</label>
+                        <input class="caseformulaire" type="text" name="nom" id="nom" placeholder="Nom" required>
+                    </div>
+                    <div class="entreesForm">
+                        <label class="labels" for="email">Adresse mail :</label>
+                        <input class="caseformulaire" type="email" name="email" id="email" placeholder="E-mail"
+                            required>
+                    </div>
+                    <div class="entreesForm">
+                        <label for="ville">Dans quelle ville souhaitez-vous assister au concert ?</label>
+                        <select name="ville" id="ville" required>
+                            <option value="choix0">--</option>
+                            <option value="Amsterdam">Amsterdam</option>
+                            <option value="Arlington">Arlington</option>
+                            <option value="Atlanta">Atlanta</option>
+                            <option value="Buenos Aires">Buenos Aires</option>
+                            <option value="Cardiff">Cardiff</option>
+                            <option value="Chicago">Chicago</option>
+                            <option value="Cincinnati">Cincinnati</option>
+                            <option value="Denver">Denver</option>
+                            <option value="Dublin">Dublin</option>
+                            <option value="Détroit">Détroit</option>
+                            <option value="East Rutherford">East Rutherford</option>
+                            <option value="Edimbourg">Edimbourg</option>
+                            <option value="Foxborough">Foxborough</option>
+                            <option value="Gelsenkirchen">Gelsenkirchen</option>
+                            <option value="Glendale">Glendale</option>
+                            <option value="Hambourg">Hambourg</option>
+                            <option value="Houston">Houston</option>
+                            <option value="Indianapolis">Indianapolis</option>
+                            <option value="Inglewood">Inglewood</option>
+                            <option value="Kansas City">Kansas City</option>
+                            <option value="La Nouvelle-Orléans">La Nouvelle-Orléans</option>
+                            <option value="Las Vegas ">Las Vegas </option>
+                            <option value="Lisbone">Lisbone</option>
+                            <option value="Liverpool">Liverpool</option>
+                            <option value="Londres">Londres</option>
+                            <option value="Londres">Londres</option>
+                            <option value="Lyon">Lyon</option>
+                            <option value="Madrid">Madrid</option>
+                            <option value="Melbourne">Melbourne</option>
+                            <option value="Mexico">Mexico</option>
+                            <option value="Miami">Miami</option>
+                            <option value="Milan">Milan</option>
+                            <option value="Minneapolis">Minneapolis</option>
+                            <option value="Munich">Munich</option>
+                            <option value="Nashville">Nashville</option>
+                            <option value="Paris">Paris</option>
+                            <option value="Philadelphie">Philadelphie</option>
+                            <option value="Pittsburgh">Pittsburgh</option>
+                            <option value="Rio de Janeiro">Rio de Janeiro</option>
+                            <option value="Santa Clara">Santa Clara</option>
+                            <option value="Seattle">Seattle</option>
+                            <option value="Singapour">Singapour</option>
+                            <option value="Stockholm">Stockholm</option>
+                            <option value="Sydney">Sydney</option>
+                            <option value="São Paulo">São Paulo</option>
+                            <option value="Tampa">Tampa</option>
+                            <option value="Tokyo">Tokyo</option>
+                            <option value="Toronto">Toronto</option>
+                            <option value="Vancouver">Vancouver</option>
+                            <option value="Varsovie">Varsovie</option>
+                            <option value="Vienne">Vienne</option>
+                            <option value="Zurich">Zurich</option>
+                        </select>
+                    </div>
+                    <div class="entreesForm">
+                        <button class="boutondenvoi">Envoyer</button>
+                    </div>
+
+                    <p class="confirmationParticipation"> Merci username, votre particpation est bien enregistrée !</p>
+                </form>
+                <p class="messageConfirmation"></p>
+
+
+                </p>
             </div>
-            <form action="" , method="get" class="formulaireJeu">
-                <div class="entreesForm">
-                    <label class="labels" for="prenom">Prénom :</label>
-                    <input class="caseformulaire" type="text" name="prenom" id="prenom" placeholder="Prénom" required>
-                </div>
-                <div class="entreesForm">
-                    <label class="labels" for="nom">Nom :</label>
-                    <input class="caseformulaire" type="text" name="nom" id="nom" placeholder="Nom" required>
-                </div>
-                <div class="entreesForm">
-                    <label class="labels" for="email">Adresse mail :</label>
-                    <input class="caseformulaire" type="email" name="email" id="email" placeholder="E-mail" required>
-                </div>
-                <div class="entreesForm">
-                    <label for="ville">Dans quelle ville souhaitez-vous assister au concert ?</label>
-                    <select name="ville" id="ville" required>
-                        <option value="choix0">--</option>
-                        <option value="Amsterdam">Amsterdam</option>
-                        <option value="Arlington">Arlington</option>
-                        <option value="Atlanta">Atlanta</option>
-                        <option value="Buenos Aires">Buenos Aires</option>
-                        <option value="Cardiff">Cardiff</option>
-                        <option value="Chicago">Chicago</option>
-                        <option value="Cincinnati">Cincinnati</option>
-                        <option value="Denver">Denver</option>
-                        <option value="Dublin">Dublin</option>
-                        <option value="Détroit">Détroit</option>
-                        <option value="East Rutherford">East Rutherford</option>
-                        <option value="Edimbourg">Edimbourg</option>
-                        <option value="Foxborough">Foxborough</option>
-                        <option value="Gelsenkirchen">Gelsenkirchen</option>
-                        <option value="Glendale">Glendale</option>
-                        <option value="Hambourg">Hambourg</option>
-                        <option value="Houston">Houston</option>
-                        <option value="Indianapolis">Indianapolis</option>
-                        <option value="Inglewood">Inglewood</option>
-                        <option value="Kansas City">Kansas City</option>
-                        <option value="La Nouvelle-Orléans">La Nouvelle-Orléans</option>
-                        <option value="Las Vegas ">Las Vegas </option>
-                        <option value="Lisbone">Lisbone</option>
-                        <option value="Liverpool">Liverpool</option>
-                        <option value="Londres">Londres</option>
-                        <option value="Londres">Londres</option>
-                        <option value="Lyon">Lyon</option>
-                        <option value="Madrid">Madrid</option>
-                        <option value="Melbourne">Melbourne</option>
-                        <option value="Mexico">Mexico</option>
-                        <option value="Miami">Miami</option>
-                        <option value="Milan">Milan</option>
-                        <option value="Minneapolis">Minneapolis</option>
-                        <option value="Munich">Munich</option>
-                        <option value="Nashville">Nashville</option>
-                        <option value="Paris">Paris</option>
-                        <option value="Philadelphie">Philadelphie</option>
-                        <option value="Pittsburgh">Pittsburgh</option>
-                        <option value="Rio de Janeiro">Rio de Janeiro</option>
-                        <option value="Santa Clara">Santa Clara</option>
-                        <option value="Seattle">Seattle</option>
-                        <option value="Singapour">Singapour</option>
-                        <option value="Stockholm">Stockholm</option>
-                        <option value="Sydney">Sydney</option>
-                        <option value="São Paulo">São Paulo</option>
-                        <option value="Tampa">Tampa</option>
-                        <option value="Tokyo">Tokyo</option>
-                        <option value="Toronto">Toronto</option>
-                        <option value="Vancouver">Vancouver</option>
-                        <option value="Varsovie">Varsovie</option>
-                        <option value="Vienne">Vienne</option>
-                        <option value="Zurich">Zurich</option>
-                    </select>
-                </div>
-                <div class="entreesForm">
-                    <button class="boutondenvoi">Envoyer</button>
-                </div>
-
-                <p class="confirmationParticipation"> Merci username, votre particpation est bien enregistrée !</p>
-            </form>
-            <p class="messageConfirmation"></p>
-
-
-            </p>
         </section>
         <!--videos youtube-->
         <!--la taille des vignettes vidéo est modifiable avec width et height-->
@@ -1831,81 +1833,43 @@
         <section class="histoireSection">
 
             <!-- HISTORY -->
-            <h2>Histoire</h2>
+            <h2>HISTOIRE</h2>
             <div class="history">
                 <div class="history-text">
-                    <p>The band was originally founded by Johnny Silverhand and Kerry Eurodyne, though the
-                        group's name was
-                        coined by Nancy Hartley, inspired by fact that historical samurai were willing to die for their
-                        cause,
-                        even
-                        if it was immoral or just plain wrong. Samurai started as a back-street band, playing in various
-                        bars
-                        and
-                        clubs around Night City, such as the Palladium, Destiny, or Nexus. Their first gig ever was
-                        played
-                        at
-                        the
-                        Red Dirt bar. One night in 2003, after playing in the Rainbow Cadenza, the band was approached
-                        by a
-                        blitzed
-                        'dorpher', who turned out to be none other than Jack Masters, the head executive at Universal
-                        Music
-                        at
-                        the
-                        time. It took only three weeks for their first single, "Blistering Love," to achieve #1 hit on
-                        the
-                        EuroCharts, which soon
-                        they followed up with the album, being one of the few times a debut album achieved such status
-                        in
-                        such a
-                        short time.
+                    <p>Une nuit de 2003, après un concert au Rainbow Cadenza, le groupe fut approché par un type chargé,
+                        qui se révéla être ni plus ni moins que Jack Masters, le directeur général d'Universal Music à
+                        l'époque.
+                        Il ne fallut que 3 semaines à leur single, "Blistering Love" pour atteindre la première place
+                        des Eurocharts, qui fut suivi peu après par leur album, étant l'un des seuls ayant eu un immense
+                        impact en une courte période de temps.
+                        Les années suivantes, Samurai enchaîna les tournées, se produisant devant des milliers de
+                        personnes, réussissant même à remplir le stade de Wembley. Ils sortirent au total six albums,
+                        trois étant des albums studios, les trois autres des versions live et des jam sessions.
+                    </p>
 
-                        During the next years, Samurai toured around the world, playing concerts with an audience of
-                        thousands of people, even managing to sell out the whole Wembley Stadium. They released a total
-                        of
-                        six
-                        albums — with three being studio work, the other three being concerts and jam sessions.</p>
-
-                    <p>In early 2007,
-                        the
-                        band suffered a huge blow. Bel Isis was married. The rest of the band members didn't see it at
-                        first,
-                        but
-                        ten weeks after the
-                        ceremony they realized Bel's husband was mistreating her. One day, she finally got the courage
-                        to
-                        talk
-                        about
-                        it with the group after her husband tried to force her to quit Samurai. For Johnny and Kerry
-                        that
-                        was the last straw, but by the time they got there it was already too late. Bel's husband had
-                        started to
-                        beat her again, but then she threw him out of the window. Nancy was arrested, and after the
-                        trial was convicted to seven months of prison. During that timespan, the band firmly supported
-                        her.
-                        By
-                        2008, Nancy finally got out of jail. Unfortunately, those seven months of inactivity had put a
-                        split
-                        in
-                        the
-                        band that they were not able to heal.</p>
+                    <p>Début 2007, le groupe subit un coup dur. Nancy Hartley se maria. Le reste du groupe ne remarqua
+                        rien de prime abord, mais quelques semaines après la cérémonies, ils réalisèrent que son mari la
+                        battait. Nancy trouva le courage d'en parler avec le groupe après que son compagnon voulu la
+                        forcer à quitter le groupe. Pour Johnny et Kerry, ce fut la goutte de trop, mais le temps
+                        d'arriver chez elle, il était trop tard. Après une énième dispute et alors qu'elle se faisait
+                        maltraiter, Nancy poussa son persécuteur par la fenêtre de leur appartement.
+                        Elle fut arrêtée et après le procès, elle fut condamnée à sept mois de prison. Durant cette
+                        période, le groupe continua de la soutenir.
+                    </p>
+                    <p>En 2008, elle fut relâchée, mais malheureusement, ces sept mois d'activités furent fatals pour le
+                        groupe, créant des dissensions dont ils ne purent se remettre. Ils prirent finalement chacun des
+                        chemins séparés.
+                        Henry travaillait sur un prototype d'interface homme machine, mais un accident lui grilla le
+                        cerveau, ce qui lui prit des mois pour s'en remettre.
+                        Denny rejoignit un groupe nommé Mastermind, qui rencontra un certain succès.
+                        Nancy décida de changer de nom pour Bel Isis, et devint l'une des personnalités majeures de N54
+                        News.
+                        Johnny et Kerry partirent en solo, généralement en collaboration.</p>
+                    <p> En 2077, le gros des membres se réunirent pour une dernière tournée en commençant par le Red
+                        Dirt, toujours ouvert après 1 siècle. </p>
 
 
-                    <p>Soon afterwards, they all went on their separate
-                        ways. Henry went to work on a human interface prototype, but an accident fried his brain and he
-                        had
-                        to
-                        rebuild his mind. Denny joined a band called Mastermind, which went well for her. Nancy decided
-                        to
-                        change
-                        her name to Bes Isis, and became a major media presence on N54 News. Johnny and Kerry went on to
-                        have successful solo careers, usually touring together as a double ticket.
-
-                        In 2077, most of the original band got together to play a last gig in the Red Dirt bar, which
-                        almost
-                        a
-                        century later was still standing. </p>
+                    </p>
                 </div>
             </div>
 
@@ -1991,43 +1955,39 @@
             </div> -->
             <footer>
                 <div class="footer-container">
-                    <div class="Logo-footer"><img src="Images/Logo2.png" width="100px"></div>
-                    
+                    <div class="Logo-footer">
+                        <img src="Images/titreHeader.png" width="100%">
+                    </div>
+
                     <div class="text">
                         <div class="bar-footer"></div>
                         <p>REJOIGNEZ-NOUS</p>
                         <div class="bar-footer"></div>
                     </div>
-                    
+
                     <div class="social-media">
-                        <a href="https://www.facebook.com/VotrePageFacebook" target="_blank"><img src="Images/facebook.png" width="30px"></a>
-                        <a href="https://twitter.com/VotreCompteTwitter" target="_blank"><img src="Images/logo-rond-twitter.png" width="30px"></a>
-                        <a href="https://www.youtube.com/VotreChaineYouTube" target="_blank"><img src="Images/youtube.png" width="30px"></a>
-                        <a href="https://www.instagram.com/VotreCompteInstagram" target="_blank"><img src="Images/instagram-icon-logo-free-png.webp" width="30px"></a>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-youtube"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
                     </div>
-            
-                    <nav class="footer-nav">
-                        <ul>
-                            <li><a href="#album">ALBUM</a></li>
-                            <li><a href="#tournee">TOURNÉE</a></li>
-                            <li><a href="#clips">CLIPS</a></li>
-                            <li><a href="#histoire">HISTOIRE</a></li>
-                            <li><a href="#crew">CREW</a></li>
-                        </ul>
-                    </nav>
+
+
                     <div class="Copyright">
-                        <p>Copyright © 2077 CTS Samourai.Tous droits réservés.</p>
+                        <p>Copyright © 2077 CTS Samourai.Tous droits réservés.</p><br>
+                        <p> Site créé par Emilie, Benoit, Elias, Vincent & Alexandre.
+                        </p></div><br><br>
                     </div>
                 </div>
             </footer>
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
         </footer>
         </div>
 

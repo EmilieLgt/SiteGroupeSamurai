@@ -11,8 +11,10 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
     --h2Color: #f4e724;
     /*(titres de section)*/
     --h3Color: #f4e724;
+    /* Pour les fonds noir transparents */
+    --opacityColor : rgb(27, 25, 25, 0.8);
   
-    --altPrimaryColor: rgb(38, 228, 238);
+    --altPrimaryColor: white;
     --altSecondaryColor: rgb(64, 239, 64);
   
     --altH1Color: rgb(128, 0, 128);
@@ -21,15 +23,14 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
     /*AJOUTS*/
     --primaryfont: "Montserrat", sans-serif;
     --h2font: "Orbitron", sans-serif;
+    --headerFont :"Oswald", sans-serif;
   }
   h3 {
     text-align: center;
-    display: inline;
     font-size: 1.5rem;
+    padding-top :1em;
     font-family: var(--h2font);
-    padding-left: 19vw;
     color: var(--h2Color);
-    animation: pulsate 2.5s ease-in-out infinite alternate;
   }
   
   h4 {
@@ -55,12 +56,9 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   }
   
   h2 {
-    display: inline;
-    margin-top: 1em;
-    padding-bottom: 1em;
-    padding-top: 1em;
-    padding-left: 1.6em;
+    padding : 2% 0% 5% 0%;
     font-size: 2rem;
+    margin-left: 5%;
     font-family: var(--h2font);
     color: var(--h2Color);
     animation: pulsate 2.5s ease-in-out infinite alternate;
