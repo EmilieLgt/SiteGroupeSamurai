@@ -265,6 +265,7 @@ section {
         margin-top: 0px;
         margin-bottom: 0px;
         overflow: scroll;
+       overflow-x:hidden;
         width: 80%;
         height: 80vh;
         padding: 0px;
