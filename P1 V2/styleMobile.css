@@ -336,6 +336,7 @@ select {margin-top : 1em;}
     background-repeat: no-repeat;
     background-size: cover;
     font-family: var(--primaryfont);
+     overflow:scroll;
 }
 
 /*Ajout de la div texte pour paramètre et ajustement des valeurs*/
