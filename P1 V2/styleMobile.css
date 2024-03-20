@@ -316,11 +316,13 @@ select {margin-top : 1em;}
 .history {
     width: 100%;
     margin: 0;
-    height: 70vh;
+    height: 50vh;
+    background-image: url("https://staticdelivery.nexusmods.com/mods/3333/images/249/249-1608297603-63850099.png");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: var(--primaryfont);
 }
 
 /*Ajout de la div texte pour paramètre et ajustement des valeurs*/
@@ -329,21 +331,23 @@ select {margin-top : 1em;}
     padding: 0em 1em 0em 1em;
     line-height: 1.5em;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: auto;
-    width: auto;
+    background-color: var(--opacityColor);
 }
 
 /*Taille de typo et marges modifiés*/
 .history p {
     height: auto;
-    margin: 0em 2em 0em 2em;
+    margin: 1em 2em 1em 2em;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: var(--altPrimaryColor);
     font-size: 10pt;
     opacity: 2;
+    line-height: 1,5;
 }
 
 
@@ -497,14 +501,14 @@ select {margin-top : 1em;}
     border: none;
     outline: none;
     background-color: rgb(0, 0, 0, 0.5);
-    color: white;
+    color: #F8F804;
     cursor: pointer;
     padding: 2em;
     border-radius: 10px;
     font-size: 6pt;
-    opacity: 0.5;
+    opacity: 0.8;
   }
   #toTop:hover {
-    background-color: rgb(13, 13, 13);
+    background-color: var(--opacityColor);
   }
 }
