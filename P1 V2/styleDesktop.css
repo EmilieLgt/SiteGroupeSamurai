@@ -576,7 +576,21 @@ gap:0.8em;
         color:var(--secondaryColor);
     }
 
-    #crewPhoto2 {
+    #crewPhotoRight2 {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        overflow: auto;
+        margin-top: 0;
+        margin-right: -5%;
+        border-radius: 2rem;
+        color:var(--altPrimaryColor);
+        text-align: center;
+        border: 0.2rem solid #f4e724;
+        border-radius: 2rem;
+    }
+
+    #crewPhotoRight4 {
         position: absolute;
         width: 150px;
         height: 150px;
