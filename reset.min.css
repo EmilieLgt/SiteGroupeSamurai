@@ -50,7 +50,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   
   body {
     background-color: var(--backgroundColor);
-    background-image: url('Images/SamuraiBackgroundHighRéso.jpg');
+    background-image: url('Images/SamuraiBackgroundHighReso.jpg');
     margin: 0;
     background-size: cover;
     background-attachment: fixed;
