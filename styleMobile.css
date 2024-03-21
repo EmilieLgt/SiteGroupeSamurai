@@ -351,14 +351,20 @@ select {margin-top : 1em;}
 
 }
 
+#clipTitle{
+    margin-top: 2%;
+    font-size: 15pt;
+    margin-bottom: 2%;
+}
+
 #clipinfo {
     display: flex;
     align-items: center;
     font-family: var(--primaryfont);
-    color: #fffb00;
+    color: var(--secondaryColor);
     padding-top: 0.5em;
+    font-size:8pt;
 }
-
 
 
 
@@ -410,6 +416,16 @@ select {margin-top : 1em;}
 
 
 /* CREW VERSION MOBILE */
+
+     #instructionCrew{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+    background-color: var(--backgroundColor);
+    color: var(--secondaryColor);
+    font-size: 10pt;
+
+}
 
 .crew {
     display: flex;
