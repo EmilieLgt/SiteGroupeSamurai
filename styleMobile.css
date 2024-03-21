@@ -13,13 +13,87 @@
      
 /* HEADER DU SITE EN MOBILE*/
 
-.imageTitre {
-    width: 100%;
-}
-
-.desktop-menu {
+.menu ul {
     display: none;
 }
+
+.sidenav.active {
+    background-color: rgb(27, 25, 25, 0.8);
+}
+
+header {
+    height: 12rem;
+    background-color: #1b1919;    
+}
+
+.imageTitre {
+    width: 90%;
+    margin-top: 111px;
+    margin-left: 19px;
+}
+
+/* Sidenav menu */
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -250px;
+    background-color: #e8e8e8;
+    padding-top: 60px;
+    transition: left 0.s ease;
+  }
+  
+  /* Sidenav menu links */
+  .sidenav a {
+    font-family: "Oswald", sans-serif;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #f4e724;
+    display: block;
+    transition: 0.s;
+  }
+  
+  .sidenav a:hover {
+    color: white;
+  }
+  
+  .sidenav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Active class */
+  .sidenav.active {
+    left: 0;
+  }
+  
+  /* Close btn */
+  .sidenav .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+  }
+  
+  /* Icône burger */
+
+.burger-icon {
+    position: fixed;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+  .burger-icon span {
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: #f4e724;
+    margin: 6px 0;
+  }
 
 /* CARROUSEL VERSION MOBILE*/
 
