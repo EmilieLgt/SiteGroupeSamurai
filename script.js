@@ -96,19 +96,6 @@ function filterCity () {
     }
 }
 
-/* changement de couleur au survol 
-const title = document.querySelector(".titleTournee");
-
-title.addEventListener('mouseover', function () {
-    title.style.color ="rgb(224, 124, 247)";
-    ;
-});
-
-title.addEventListener('mouseout', function () {
-    title.style.color = "yellow"; // Réinitialisez la couleur lorsqu'on quitte la zone du titre
-});
-*/
-
 /* Menu mobile */ 
 
 var sidenav = document.getElementById("mySidenav");
@@ -132,18 +119,7 @@ function closeNav(event) {
   }
 
 
-/* Tri de tableau (ordre alphabétique)*/ 
-
-let villes = document.getElementsByClassName("villesTournee");
-let toto = []
-for (let i = 0; i < villes.length; i++) {
-toto.push(villes[i].innerText);
-}
-console.log(toto.sort())
-console.log(villes);
-
-
-/* Tri de tableau qui fonctionne (mais je ne l'ai pas encore comprise) */ 
+/* Tri de tableau */ 
 const compare = function(ids, asc){
     return function(row1, row2){
       const tdValue = function(row, ids){
@@ -175,7 +151,7 @@ const compare = function(ids, asc){
 });
 
 
-/* affichage du prénom pour le formulaire */
+/* affichage du prénom + d'un gif pour le formulaire */
 let form = document.querySelector(".formulaireJeu");
 let prenomInput = document.getElementById("prenom");
 let messageConfirmation = document.querySelector(".confirmationParticipation");
@@ -193,7 +169,7 @@ form.addEventListener("submit", function (event) {
 
 })
 
-/*affichage d'une chanson*/ 
+/*affichage d'une chanson après le quizz*/ 
 
 function choixChanson()  {
 
