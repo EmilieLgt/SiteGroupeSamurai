@@ -66,7 +66,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: var(--h2font);
+    font-family: var(--h3font);
 }
 
 .imgCarousel {
@@ -286,7 +286,7 @@ select {margin-top : 1em;}
     border: none;
     border-radius: 30px;
     font-size: 1rem;
-    font-family: var(--h2font);
+  font-family: var(--h3font);
     color: var(--h1Color);
 }
 
@@ -562,7 +562,7 @@ select {margin-top : 1em;}
 
 /* FOOTER VERSION MOBILE */
 
-footer { font-family: var(--h2font);
+footer { font-family: var(--h3font);
     color: var(--secondaryColor)
 }
 .footer-container {
