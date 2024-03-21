@@ -76,23 +76,20 @@
 
 /*Singles*/ 
     
-.derniersSingles{padding-top:3em;}
-.listeChansons {padding-top:2em;
-    display:flex;
-    flex-direction:row;
-flex-wrap:wrap;
-justify-content: center;}
-
+.derniersSingles{padding-top:2em;}
+.listeChansons {display:none}
 /*Quizz*/
+
+.listeChansonsMobile {padding:1em;
+gap:1em;}
 
 .consigneQuizz {padding-top:1em;
 font-weight: bold;}
 
 .partieQuizz {font-family: var(--primaryfont);
-    font-size:1.2em;
-
     text-align: center;
     align-items: center;
+    line-height: 1.2em;
     margin: auto;
     padding-top:2em;
     padding-bottom:1em;
@@ -109,6 +106,8 @@ align-items: center;
 align-content: center;
 gap:0.8em;
 }
+
+
 
 
 /* TOURNÉE VERSION MOBILE*/
