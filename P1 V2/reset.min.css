@@ -30,7 +30,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
     text-align: center;
     font-size: 1.5rem;
     padding-top :1em;
-    ffont-family: var(--h3font);
+    font-family: var(--h3font);
     color: var(--h2Color);
   }
   
