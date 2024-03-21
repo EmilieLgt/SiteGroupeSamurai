@@ -103,6 +103,58 @@
                 </div>
 
             
+            <h3 class="derniersSingles">Derniers singles </h3>
+
+                <div class="listeChansons">
+
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1AslaQYl1cMb1ItQKmtJer?utm_source=generator&theme=0" width="40%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0UHxkkgI5GfV0XBRA1rqfe?utm_source=generator&theme=0" width="40%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4SxtjfUfvCe4NoeDAY0YhF?utm_source=generator&theme=0" width="40%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5Ln8eNkYC9to99zsPEZbS2?utm_source=generator&theme=0" width="40%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+               
+                </div>
+
+            <h3 class="titreQuizz">Quelle chanson de Samuraï êtes vous ? </h3>
+           
+            <div class="partieQuizz">
+                <p class="introQuizz">Vous ne savez pas par où commencer dans cette immense discographie ? </p>
+                <p>Laissez-nous deviner quelle musique est faite pour vous !</p>
+
+                    <div class="quizz">
+                    <p class="consigneQuizz"> Le lait c'est :</p>
+                   
+                    <div>
+                        <input type="radio" id="avantCereales" name="reponseQuizz" value="avant" onclick="choixChanson()"  />
+                        <label id="labelAvantCereales" for="Avant les céréales">Avant les céréales</label>
+                      </div>
+                    
+                      <div>
+                        <input type="radio" id="apresCereales" name="reponseQuizz" value="apres" onclick="choixChanson()" />
+                        <label id="labelApresCereales" for="Après les céréales">Après les céréales</label>
+                      </div>
+                    
+                      <div>
+                        <input type="radio" id="intolerantLactose" name="reponseQuizz" value="intolerantLactose"onclick="choixChanson()" />
+                        <label id="labelIntolerantLactose" for="Intolérant au lactose">Je suis intolérant·e au lactose</label>
+                      </div>
+
+                      <div>
+                        <input type="radio" id="poulet" name="reponseQuizz" value="poulet" onclick="choixChanson()" />
+                        <label id="labelPoulet" for="Je ne manque que du poulet">Je ne mange que du poulet</label>
+                      </div>
+                   
+                    <div id="resultatChanson"></div>
+                    <!--<button class="boutonQuizz">Envoyer</button>-->
+
+                    </div>
+            </div>
+
+        </div>
+
+            
         </section>
         <section> <button onclick="topFunction()" id="toTop" title="Go to top">↑</button>
         </section>
@@ -130,10 +182,10 @@
                             DATE
                         </th>
                         <th class="rangfixe">
-                            VILLE
+                            VILLE ▼ 
                         </th>
                         <th class="rangfixe">
-                            PAYS
+                            PAYS ▼ 
 
                         </th>
                         <th class="rangfixe">
