@@ -25,20 +25,8 @@
         width: 100%;
     }
 
-    .menu-toggle {
+    .sidenav {
         display: none;
-    }
-
-    .mobile-menu.active {
-        display: none;
-    }
-
-    .mobile-menu li {
-        display: none;
-    }
-
-    .menu {
-        display: visible;
     }
 
     .menu a {
