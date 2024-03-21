@@ -57,6 +57,7 @@
         width: 100%;
         background-color: var(--backgroundColor);
     }
+    .entreemenu>a:hover {color:var(--secondaryColor)}
 
     .menu {
         position: sticky;
@@ -695,6 +696,9 @@ gap:0.8em;
         font-size: 30px;
         justify-content: space-around;
     }
+
+   .social-media>a:hover{color:var(--primaryColor)}
+
     .footer-nav ul {
         list-style-type: none;
         display: flex;
