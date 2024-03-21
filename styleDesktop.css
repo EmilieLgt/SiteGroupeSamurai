@@ -414,12 +414,19 @@ gap:0.8em;
     }
 
 
+#clipTitle{
+    margin-top: 2%;
+    font-size: 15pt;
+    margin-bottom: 2%;
+}
+
     #clipinfo {
         display: flex;
         align-items: center;
         font-family: var(--primaryfont);
         color: var(--secondaryColor);
         padding-top: 0.5em;
+        font-size:10pt;
         
     }
 
@@ -471,6 +478,16 @@ gap:0.8em;
 
 
     /* CREW VERSION DESKTOP ELIAS */
+
+   
+    #instructionCrew{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5%;
+        background-color: var(--backgroundColor);
+        color: var(--secondaryColor);
+
+    }
 
     .crew {
         display: flex;
