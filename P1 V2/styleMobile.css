@@ -423,7 +423,29 @@ select {margin-top : 1em;}
     padding-top: 10%;
 }
 
-#crewPhoto1 {
+#crewPhotoLeft1 {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 25px;
+    margin-left: -19%;
+    margin-top: -66%;
+     overflow:scroll;
+    text-align: center;
+    border: 0.2rem solid #f4e724;
+}
+#crewPhotoLeft3 {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 25px;
+    margin-left: -19%;
+    margin-top: -66%;
+     overflow:scroll;
+    text-align: center;
+    border: 0.2rem solid #f4e724;
+}
+#crewPhotoLeft5 {
     position: absolute;
     width: 150px;
     height: 150px;
@@ -469,7 +491,19 @@ select {margin-top : 1em;}
     justify-content: flex-end;
 }
 
-#crewPhoto2 {
+#crewPhotoRight2 {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+     overflow:scroll;
+    margin-right: -19%;
+    margin-top: -66%;
+    color:var(--altPrimaryColor);
+    text-align: center;
+    border: 0.2rem solid #f4e724;
+    border-radius: 2rem;
+}
+#crewPhotoRight4 {
     position: absolute;
     width: 150px;
     height: 150px;
