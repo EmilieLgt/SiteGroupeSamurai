@@ -400,6 +400,7 @@ select {margin-top : 1em;}
     display: flex;
     justify-content: center;
     align-items: center;
+     text-align: center;
     color: var(--altPrimaryColor);
     font-size: 10pt;
     opacity: 2;
