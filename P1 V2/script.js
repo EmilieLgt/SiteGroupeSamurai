@@ -168,9 +168,10 @@ const compare = function(ids, asc){
 let form = document.querySelector(".formulaireJeu");
 let prenomInput = document.getElementById("prenom");
 let messageConfirmation = document.querySelector(".confirmationParticipation");
-let imageConfirmation = document.createElement("img")
-imageConfirmation.src="https://media2.giphy.com/media/9DvBKzl2OSERMcBs6G/giphy.gif"
+let imageConfirmation = document.createElement("img");
+imageConfirmation.src="https://cache.teia.rocks/ipfs/QmXCxmeLURZStpvvDb9ZeFsLrjH2FWc5JfURvXwyVmxwff";
 imageConfirmation.style.padding="1em";
+imageConfirmation.style.width="20%";
 let blocImage = document.querySelector(".blocImageConfirmation");
 
 form.addEventListener("submit", function (event) {
@@ -181,6 +182,44 @@ form.addEventListener("submit", function (event) {
 
 })
 
+/*affichage d'une chanson*/ 
+
+function choixChanson()  {
+
+
+    //Si on veut que le choix soit unique (pas de possibilité de cliquer plusieurs fois il faut recharger la page)
+    const boutonsRadio = document.querySelectorAll('input[type="radio"]');
+    boutonsRadio.forEach(function(bouton) {
+        bouton.disabled = true;
+    }); 
+    
+    //Si on met un choix unique, on peut garder la couleur, sinon enlever ou faire autrement
+    if(document.getElementById('avantCereales').checked)
+       {
+     document.getElementById('resultatChanson').innerHTML='<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1AslaQYl1cMb1ItQKmtJer?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe> ';
+     let lait = document.getElementById('labelAvantCereales')
+     lait.style.color="#f4e724"
+    }
+    else if(document.getElementById('apresCereales').checked)
+    {
+    document.getElementById('resultatChanson').innerHTML='<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4SxtjfUfvCe4NoeDAY0YhF?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe> ';
+    let cereales = document.getElementById('labelApresCereales')
+    cereales.style.color="#f4e724"
+    }
+   else if(document.getElementById('intolerantLactose').checked)
+    {
+    document.getElementById('resultatChanson').innerHTML='<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5Ln8eNkYC9to99zsPEZbS2?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>';
+    let lactose = document.getElementById('labelIntolerantLactose')
+    lactose.style.color="#f4e724"
+    }
+   else if(document.getElementById('poulet').checked)
+    {
+    document.getElementById('resultatChanson').innerHTML='<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4QFsfUVgZesJCJ7jQXCXZ4?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe> ';
+    let poulet = document.getElementById('labelPoulet')
+    poulet.style.color="#f4e724"}
+}
+
+/*bouton qui remonte */
 
 let mybutton = document.getElementById("toTop");
 window.onscroll = function() {scrollFunction()};
