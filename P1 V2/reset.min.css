@@ -30,7 +30,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
     text-align: center;
     font-size: 1.5rem;
     padding-top :1em;
-    font-family: var(--h2font);
+    ffont-family: var(--h3font);
     color: var(--h2Color);
   }
   
@@ -38,7 +38,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
     text-align: center;
     display: inline;
     font-size: 1rem;
-    font-family: var(--h2font);
+   font-family: var(--h3font);
     color: var(--h2Color);
   }
   * {
