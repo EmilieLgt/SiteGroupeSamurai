@@ -235,6 +235,85 @@ function topFunction() {
 }
 
 
+/* MUSIQUE PHOTO CREW */
+
+var item = document.getElementById("crewPhotoLeft1");
+var vocal = new Audio('musicCrew/vocal.mp3');
+
+item.addEventListener("mouseover", playVocal, false);
+item.addEventListener("mouseout", stopVocal, false);
+
+function playVocal() {
+   vocal.play();
+}
+
+function stopVocal() {
+   vocal.pause();
+   vocal.currentTime = 2;
+}
+
+
+
+var item = document.getElementById("crewPhotoRight2");
+var guitar = new Audio('musicCrew/guitar.mp3');
+
+item.addEventListener("mouseover", playGuitar, false);
+item.addEventListener("mouseout", stopGuitar, false);
+
+function playGuitar() {
+   guitar.play();
+}
+
+function stopGuitar() {
+   guitar.pause();
+   guitar.currentTime = 5;
+}
+
+
+var item = document.getElementById("crewPhotoLeft3");
+var drum = new Audio('musicCrew/drum.mp3');
+
+item.addEventListener("mouseover", playDrum, false);
+item.addEventListener("mouseout", stopDrum, false);
+
+function playDrum() {
+   drum.play();
+}
+
+function stopDrum() {
+   drum.pause();
+   drum.currentTime = 13;
+}
+
+var item = document.getElementById("crewPhotoRight4");
+var bass = new Audio('musicCrew/bass.mp3');
+
+item.addEventListener("mouseover", playBass, false);
+item.addEventListener("mouseout", stopBass, false);
+
+function playBass() {
+   bass.play();
+}
+
+function stopBass() {
+   bass.pause();
+   bass.currentTime = 3;
+}
+
+var item = document.getElementById("crewPhotoLeft5");
+var synth = new Audio('musicCrew/synth.mp3');
+
+item.addEventListener("mouseover", playSynth, false);
+item.addEventListener("mouseout", stopSynth, false);
+
+function playSynth() {
+   synth.play();
+}
+
+function stopSynth() {
+   synth.pause();
+   synth.currentTime = 17;
+}
 
 
 
