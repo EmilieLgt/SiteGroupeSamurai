@@ -22,7 +22,8 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   
     /*AJOUTS*/
     --primaryfont: "Montserrat", sans-serif;
-    --h2font: "Orbitron", sans-serif;
+    --h2font:"Libre Barcode 39 Text", system-ui;
+    --h3font: "Oswald", sans-serif;
     --headerFont :"Oswald", sans-serif;
   }
   h3 {
