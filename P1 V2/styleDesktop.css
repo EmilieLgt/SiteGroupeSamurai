@@ -212,7 +212,7 @@ gap:0.8em;
         padding-left: 5em;
     }
 
-    form {
+   .formulaireJeu  {
         font-family: var(--primaryfont);
         margin: auto;
         text-align: center;
@@ -221,7 +221,7 @@ gap:0.8em;
       
     }
 
-    form>div {
+   .formulaireJeu>div {
         margin-bottom: 20px;
     }
 
