@@ -111,14 +111,25 @@ title.addEventListener('mouseout', function () {
 
 /* Menu mobile */ 
 
-document.addEventListener('DOMContentLoaded', function() {
-    const menuToggle = document.querySelector('.menu-toggle');
-    const mobileMenu = document.querySelector('.mobile-menu');
+var sidenav = document.getElementById("mySidenav");
+var openBtn = document.getElementById("openBtn");
+var closeBtn = document.getElementById("closeBtn");
 
-    menuToggle.addEventListener('click', function() {
-        mobileMenu.classList.toggle('active');
-    });
-});
+openBtn.onclick = openNav;
+closeBtn.onclick = closeNav;
+
+/* Set the width of the side navigation to 250px */
+function openNav() {
+  sidenav.classList.add("active");
+}
+
+/* Set the width of the side navigation to 0 */
+
+function closeNav(event) {
+    event.preventDefault(); // Empêcher le comportement par défaut du bouton
+    sidenav.classList.remove("active");
+    
+  }
 
 
 /* Tri de tableau (ordre alphabétique)*/ 
