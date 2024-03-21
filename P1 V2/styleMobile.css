@@ -74,6 +74,42 @@
     width: 50%;
 }
 
+/*Singles*/ 
+    
+.derniersSingles{padding-top:3em;}
+.listeChansons {padding-top:2em;
+    display:flex;
+    flex-direction:row;
+flex-wrap:wrap;
+justify-content: center;}
+
+/*Quizz*/
+
+.consigneQuizz {padding-top:1em;
+font-weight: bold;}
+
+.partieQuizz {font-family: var(--primaryfont);
+    font-size:1.2em;
+
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    padding-top:2em;
+    padding-bottom:1em;
+    width:80%;
+    color: #E3E3E3;
+background-color: var(--opacityColor);
+}
+
+.quizz  {padding-top:1em;
+display:flex;
+flex-direction:column;
+justify-content: center;
+align-items: center;
+align-content: center;
+gap:0.8em;
+}
+
 
 /* TOURNÉE VERSION MOBILE*/
 
