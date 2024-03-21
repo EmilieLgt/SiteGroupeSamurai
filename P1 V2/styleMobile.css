@@ -248,7 +248,7 @@ padding : 1em;
     padding: 1em;
 }
 
-form {
+.formulaireJeu {
     font-family: var(--primaryfont);
     width: 90%;
     margin: auto;
@@ -258,7 +258,7 @@ form {
  
 }
 
-form>div {
+.formulaireJeu>div {
     margin-bottom: 20px;
 }
 
