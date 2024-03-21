@@ -205,7 +205,6 @@ gap:0.8em;
     gap:0.5em;
     font-weight: bold;
     padding-bottom: 1em;
-    padding-top: em;
     border-radius: 1em 1em 0 0;
     font-family: var(--primaryfont);
     background-color: rgb(0, 0, 0, 0.8);
@@ -266,7 +265,6 @@ tr {
 td {
     border: none;
     font-size: 1.5em;
-    padding: none;
     margin: 0em;
 }
 
@@ -301,7 +299,7 @@ th {
 
 /*Jeu concours*/
 .jeuConcours {
-    background-color: #131313, 0.8;
+    background-color: var(--opacityColor);
     font-family: var(--primaryfont);
     width: 80%;
     margin: auto;
@@ -484,7 +482,7 @@ select {margin-top : 1em;}
     color: var(--altPrimaryColor);
     font-size: 10pt;
     opacity: 2;
-    line-height: 1,5;
+    line-height: 1.5em;
 }
 
 
