@@ -237,7 +237,6 @@ gap:0.8em;
     .boutondenvoi {
         display: inline-block;
         padding: 1em;
-        font-size: 1em;
         cursor: pointer;
         text-align: center;
         text-decoration: none;
@@ -245,7 +244,7 @@ gap:0.8em;
         background-color: var(--backgroundColor);
         border: none;
         border-radius: 30px;
-        font-size: 1rem;
+        font-size: 1.5rem;
        font-family: var(--h3font);
         color: var(--h1Color);
     }
