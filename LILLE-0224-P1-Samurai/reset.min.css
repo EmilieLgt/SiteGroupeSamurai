@@ -1,0 +1,66 @@
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+:root {
+    --backgroundColor: #1b1919;
+    /* (pour le fond)*/
+    --primaryColor: #f4e724;
+    /*(pour les textes principaux)*/
+    --secondaryColor: #e3e3e3;
+    /*(deuxieme couleur de texte)*/
+    --h1Color: #f4e724;
+    /*(titre principal)*/
+    --h2Color: #f4e724;
+    /*(titres de section)*/
+    --h3Color: #f4e724;
+    /* Pour les fonds noir transparents */
+    --opacityColor : rgb(27, 25, 25, 0.8);
+  
+    --altPrimaryColor: white;
+    --altSecondaryColor: rgb(64, 239, 64);
+  
+    --altH1Color: rgb(128, 0, 128);
+    --altH2Color: rgb(64, 239, 64);
+  
+    /*AJOUTS*/
+    --primaryfont: "Montserrat", sans-serif;
+    --h2font:"Libre Barcode 39 Text", system-ui;
+    --h3font: "Oswald", sans-serif;
+    --headerFont :"Oswald", sans-serif;
+  }
+  h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top :1em;
+    font-family: var(--h3font);
+    color: var(--h2Color);
+  }
+  
+  h4 {
+    text-align: center;
+    display: inline;
+    font-size: 1rem;
+   font-family: var(--h3font);
+    color: var(--h2Color);
+  }
+  * {
+    overflow-x: hidden;
+    overflow-x: hidden;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  body {
+    background-color: var(--backgroundColor);
+    background-image: url('Images/SamuraiBackgroundHighReso.jpg');
+    margin: 0;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  h2 {
+    padding : 2% 0% 5% 0%;
+    font-size: 2rem;
+    margin-left: 5%;
+    font-family: var(--h2font);
+    color: var(--h2Color);
+    animation: pulsate 2.5s ease-in-out infinite alternate;
+  } 
