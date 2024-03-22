@@ -40,9 +40,8 @@ header {
     z-index: 1;
     top: 0;
     left: -250px;
-    background-color: #e8e8e8;
     padding-top: 60px;
-    transition: left 0.s ease;
+    transition: left 0.5s ease;
   }
   
   /* Sidenav menu links */
@@ -53,7 +52,7 @@ header {
     font-size: 25px;
     color: #f4e724;
     display: block;
-    transition: 0.s;
+    transition: 0.3s;
   }
   
   .sidenav a:hover {
@@ -489,14 +488,8 @@ select {margin-top : 1em;}
 
 /* CREW VERSION MOBILE */
 
-     #instructionCrew{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 5%;
-    background-color: var(--backgroundColor);
-    color: var(--secondaryColor);
-    font-size: 10pt;
-
+#instructionCrew {
+    display: none;
 }
 
 .crew {
