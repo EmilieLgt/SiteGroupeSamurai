@@ -352,7 +352,7 @@ select {margin-top : 1em;}
 .boutondenvoi {
     display: inline-block;
     padding: 1em;
-    font-size: 1em;
+    font-size: 1.2em;
     cursor: pointer;
     text-align: center;
     text-decoration: none;
@@ -360,7 +360,6 @@ select {margin-top : 1em;}
     background-color: var(--backgroundColor);
     border: none;
     border-radius: 30px;
-    font-size: 1rem;
   font-family: var(--h3font);
     color: var(--h1Color);
 }
