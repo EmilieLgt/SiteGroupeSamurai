@@ -158,7 +158,7 @@ header {
 /*Quizz*/
 
 .listeChansonsMobile {padding:1em;
-gap:1em;}
+                     margin-left:2em;}
 
 .consigneQuizz {padding-top:1em;
 font-weight: bold;}
