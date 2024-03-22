@@ -401,6 +401,11 @@ gap:0.8em;
         width: 500px;
     }
 
+#clipTitle1{
+        margin-top: 2%;
+        font-size: 15pt;
+        margin-bottom: 2%;
+    }
 
 #clipTitle{
     margin-top: 2%;
@@ -408,7 +413,17 @@ gap:0.8em;
     margin-bottom: 2%;
 }
 
-    #clipinfo {
+#clipinfo1 {
+    display: flex;
+    align-items: center;
+    font-family: var(--primaryfont);
+    color: var(--secondaryColor);
+    padding-top: 0.5em;
+    font-size:10pt;
+    
+}
+
+#clipinfo {
         display: flex;
         align-items: center;
         font-family: var(--primaryfont);
@@ -538,7 +553,7 @@ gap:0.8em;
        
     }
 
-    #overlayCrewLeft {
+    .overlayCrewLeft {
         margin-left: 0;
         padding: 2% 2%;
            /* background-color: #801468; */
@@ -550,14 +565,14 @@ gap:0.8em;
            border-radius: 2rem;
     }
 
-    #crewLeft {
+    .crewLeft {
         padding-top: 0%;
         display: flex;
         align-items: center;
         flex-direction: row;
     }
 
-    #crewRight {
+    .crewRight {
         padding-bottom: 5%;
         padding-top: 5%;
         display: flex;
@@ -610,7 +625,7 @@ gap:0.8em;
         border-radius: 2rem;
     }
 
-    #overlayCrewRight {
+    .overlayCrewRight {
         margin-right: 0;
         padding: 2% 2%;
            /* background-color: #801468; */
@@ -705,9 +720,11 @@ gap:0.8em;
     }
 
    .Logo-footer {
-    display: flex;
+    display:flex;
+    width: 15%;
+    height: 15%;
+    justify-content: center;
 
-    width: 35%;
 
 } 
    

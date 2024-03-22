@@ -422,10 +422,25 @@ select {margin-top : 1em;}
 
 }
 
+#clipTitle1{
+    margin-top: 2%;
+    font-size: 15pt;
+    margin-bottom: 2%;
+}
+
 #clipTitle{
     margin-top: 2%;
     font-size: 15pt;
     margin-bottom: 2%;
+}
+
+#clipinfo1 {
+    display: flex;
+    align-items: center;
+    font-family: var(--primaryfont);
+    color: var(--secondaryColor);
+    padding-top: 0.5em;
+    font-size:8pt;
 }
 
 #clipinfo {
@@ -436,6 +451,7 @@ select {margin-top : 1em;}
     padding-top: 0.5em;
     font-size:8pt;
 }
+
 
 
 
@@ -488,20 +504,26 @@ select {margin-top : 1em;}
 
 /* CREW VERSION MOBILE */
 
-#instructionCrew {
-    display: none;
+     #instructionCrew{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+    background-color: var(--backgroundColor);
+    color: var(--backgroundColor);
+    font-size: 10pt;
+
 }
 
 .crew {
     display: flex;
     flex-direction: column;
     gap: 98px;
-    padding-top: 5rem;
+    padding-top: 7rem;
     padding-bottom: 1rem;
 
 }
 
-#crewLeft {
+.crewLeft {
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -554,7 +576,7 @@ select {margin-top : 1em;}
         font-size: x-large;
 }
 
-#overlayCrewLeft {
+.overlayCrewLeft {
     padding: 2% 2%;
     /* margin-left: 15%; */
     margin-right: 10%;
@@ -602,7 +624,7 @@ select {margin-top : 1em;}
     border-radius: 2rem;
 }
 
-#crewRight {
+.crewRight {
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
@@ -610,7 +632,7 @@ select {margin-top : 1em;}
     padding-top: 10%;
 }
 
-#overlayCrewRight {
+.overlayCrewRight {
     padding: 2% 2%;
     /* margin-right: 15%; */
     padding-top: 5%;
@@ -710,7 +732,9 @@ footer { font-family: var(--h3font);
 
 .Logo-footer {
 display: flex;
-width: 80%;
+height: 15%;
+width: 15%;
+justify-content: center;
 
 } 
 
